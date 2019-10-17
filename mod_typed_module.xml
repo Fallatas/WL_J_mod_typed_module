@@ -12,7 +12,6 @@
     <files>
         <filename module="mod_typed_module<">mod_typed_module<.php</filename>
         <filename>helper.php</filename>
-        <folder>inc</folder>
         <folder>tmpl</folder>
     </files>
     <config>
