@@ -1,24 +1,6 @@
-<?php
-/**
- * @package     Joomla.Site
- * @subpackage  mod_banners
- *
- * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
-defined('_JEXEC') or die;
 
 /**
- * Helper for mod_banners
- *
- * @package     Joomla.Site
- * @subpackage  mod_banners
- * @since       1.5
- */
-<?php
-/**
- * @package    TYPED MODUL
+ * @package    WL Typed Module
  *
  * @author     Thomas Winterling <info@winterling-labs.com>
  * @copyright  Copyright (C) 2005 - 2019. All rights reserved.
@@ -28,7 +10,7 @@ defined('_JEXEC') or die;
 defined('_JEXEC') or die;
 
 /**
- * Helper for mod_dd_gmaps_module
+ * Helper for mod_wl_typed_module
  *
  * @since  Version 1.0.0.0
  */
