@@ -32,7 +32,7 @@ defined('_JEXEC') or die;
  *
  * @since  Version 1.0.0.0
  */
-class Mod_Typed_Module_Helper
+class ModWL_Typed_Module_Helper
 {
 	
 }

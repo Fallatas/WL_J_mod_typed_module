@@ -13,11 +13,11 @@ defined('_JEXEC') or die;
     require_once __DIR__ . '/helper.php';   // Helper
 	
     
-	JHTML::_('script', 'mod_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
+	JHTML::_('script', 'mod_wl_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
 	
 	
 	// Check for a custom CSS file
-    JHtml::_('stylesheet', 'mod_typed_module/user.css', array('version' => 'auto', 'relative' => true));
+    JHtml::_('stylesheet', 'mod_wl_typed_module/user.css', array('version' => 'auto', 'relative' => true));
     
     
-   require JModuleHelper::getLayoutPath('mod_typed_module', $params->get('layout', 'default'));
+   require JModuleHelper::getLayoutPath('mod_wl_typed_module', $params->get('layout', 'default'));

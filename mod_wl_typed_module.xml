@@ -1,5 +1,5 @@
 <extension type="module" version="3.5.0" method="upgrade">
-    <name>mod_typed_module</name>
+    <name>mod_wl_typed_module</name>
     <creationDate>17.10.2019</creationDate>
     <author>Thomas Winterling</author>
     <authorEmail>info@winterling-labs.com</authorEmail>
@@ -10,7 +10,7 @@
     <description>MOD_WL_TYPED_MODULE_XML_DESCRIPTION</description>
 
     <files>
-        <filename module="mod_typed_module<">mod_typed_module<.php</filename>
+        <filename module="mod_wl_typed_module<">mod_wl_typed_module<.php</filename>
         <filename>helper.php</filename>
         <folder>tmpl</folder>
     </files>
@@ -25,11 +25,11 @@
     </config>
 
     <languages folder="language">
-        <language tag="de-DE">de-DE/de-DE.mod_typed_module<.ini</language>
-        <language tag="de-DE">de-DE/de-DE.mod_typed_module<.sys.ini</language>
+        <language tag="de-DE">de-DE/de-DE.mod_wl_typed_module<.ini</language>
+        <language tag="de-DE">de-DE/de-DE.mod_wl_typed_module<.sys.ini</language>
     </languages>
 
-    <media destination="mod_typed_module<" folder="media">
+    <media destination="mod_wl_typed_module<" folder="media">
         <folder>css</folder>
         <folder>js</folder>
     </media>
