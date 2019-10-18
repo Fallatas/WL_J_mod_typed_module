@@ -18,7 +18,35 @@
         <fields name="params">
             <fieldset name="basic">
 
-                
+            <field
+                        name="Elementtype"
+                        type="list"
+                        default="'1000"
+                        label="Elementtyp"
+                        description="Bitte wählen Sie den Typ des Inhaltselement aus.">
+                    <option value="1000">Animierter Text</option>
+                    <option value="2000">normaler Text</option>
+                </field>
+
+                <field name="id"
+                       type="text"
+                       default="ID wählen"
+                       label="Eindeutige ID"
+                       description="Bitte wählen Sie eine ID aus."
+                       size="10"
+                />
+
+
+                <field
+                        name="fontsize"
+                        type="integer"
+                        default="20"
+                        label="Schriftgröße wählen"
+                        description="Bitte wählen Sie eine Schriftgröße aus."
+                        first="20"
+                        last="60"
+                        step="10"
+                />
 
             </fieldset>    
         </fields>
