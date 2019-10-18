@@ -10,7 +10,7 @@
     <description>MOD_WL_TYPED_MODULE_XML_DESCRIPTION</description>
 
     <files>
-        <filename module="mod_wl_typed_module<">mod_wl_typed_module<.php</filename>
+        <filename module="mod_wl_typed_module">mod_wl_typed_module.php</filename>
         <filename>helper.php</filename>
         <folder>tmpl</folder>
     </files>
