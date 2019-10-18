@@ -26,10 +26,10 @@
 
     <languages folder="language">
         <language tag="de-DE">de-DE/de-DE.mod_wl_typed_module.ini</language>
-        <language tag="de-DE">de-DE/de-DE.mod_wl_typed_module.sys.ini</language>
+        <language tag="de-DE">de-DE/de-DE.mod_wl_typed_module<.sys.ini</language>
     </languages>
 
-    <media destination="mod_wl_typed_module<" folder="media">
+    <media destination="mod_wl_typed_module" folder="media">
         <folder>css</folder>
         <folder>js</folder>
     </media>
