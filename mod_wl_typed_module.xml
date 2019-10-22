@@ -18,7 +18,9 @@
         <fields name="params">
             <fieldset name="basic">
 
-            <field
+             <!-- Styling -->
+
+                <field
                         name="Elementtype"
                         type="list"
                         default="'1000"
@@ -36,7 +38,6 @@
                        size="10"
                 />
 
-
                 <field
                         name="fontsize"
                         type="integer"
@@ -47,6 +48,105 @@
                         last="60"
                         step="10"
                 />
+
+
+                <field name="words"
+                       type="text"
+                       default="Some text"
+                       label="Schlagwörter festlegen"
+                       description="Bitte legen Sie ihre Schlagwörter an"
+                       size="10"
+                />
+
+                <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
+
+                <!-- Speed -->
+
+                <field
+                        name="fontspeed"
+                        type="integer"
+                        default="1"
+                        label="Geschwindingkeit"
+                        description="Bitte legen Sie die Geschwindingkeit fest."
+                        first="1"
+                        last="10"
+                        step="1"
+                />
+
+                <field
+                        name="timestart"
+                        type="integer"
+                        default="1"
+                        label="Zeit bevor die Eingabe beginnt"
+                        description="Bitte legen Sie eine Zeit fest."
+                        first="1"
+                        last="10"
+                        step="1"
+                />
+
+                <field
+                        name="timeback"
+                        type="integer"
+                        default="1"
+                        label="Geschwindigkeit beim Rücklauf"
+                        description="Bitte legen Sie die Geschwindingkeit fest."
+                        first="1"
+                        last="10"
+                        step="1"
+                />
+
+
+                <field
+                        name="timeback"
+                        type="integer"
+                        default="1"
+                        label="Zeitverzögerung bor Rücklauf"
+                        description="Bitte legen Sie die Geschwindingkeit fest."
+                        first="1"
+                        last="10"
+                        step="1"
+                />
+
+                <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
+
+                <!-- loops -->
+
+                <field
+                        name="loop"
+                        type="radio"
+                        default="1"
+                        label="Ausgabe wiederholen"
+                        description="Aktivieren Sie die Checkbox für eine Wiederholung"
+                        class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field
+                        name="loopcount"
+                        type="integer"
+                        default="2"
+                        label="Anzahl der Wiederholungen"
+                        description="Bitte legen Sie die Anzahl der Wiederholungen fest"
+                        first="1"
+                        last="10"
+                        step="1"
+                />
+
+                <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
+
+                <!-- cursor -->
+
+                <field
+                        name="cursor"
+                        type="radio"
+                        default="1"
+                        label="Cursor ausblenden"
+                        description="Soll der Cursor ausgebelndet werden"
+                        class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
 
             </fieldset>    
         </fields>
