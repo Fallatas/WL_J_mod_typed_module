@@ -1,6 +1,7 @@
+<?php
 
 /**
- * @package    WL Typed Module
+ * @package    WL TYPED MODUL
  *
  * @author     Thomas Winterling <info@winterling-labs.com>
  * @copyright  Copyright (C) 2005 - 2019. All rights reserved.
@@ -10,7 +11,7 @@
 defined('_JEXEC') or die;
 
 /**
- * Helper for mod_wl_typed_module
+ * Helper for mod_dd_gmaps_module
  *
  * @since  Version 1.0.0.0
  */
