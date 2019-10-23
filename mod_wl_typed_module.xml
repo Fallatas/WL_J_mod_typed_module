@@ -18,9 +18,7 @@
         <fields name="params">
             <fieldset name="basic">
 
-             <!-- Styling -->
-
-                 <field
+             <field
                         name="Elementtype"
                         type="list"
                         default="'1000"
@@ -52,14 +50,29 @@
 
                 <field type="spacer" name="spacer_gdpr_end" label="MOD_WL_TYPED_MODULE_MSGWORDS" />
 
-                <field name="words"
+                <field name="firstwords"
                        type="text"
                        default=""
-                       label="MOD_WL_TYPED_MODULE_WORDS_LABEL"
-                       description="MOD_WL_TYPED_MODULE_WORDS_DESC"
+                       label="MOD_WL_TYPED_MODULE_FIRSTWORDS_LABEL"
+                       description="MOD_WL_TYPED_MODULE_FIRSTWORDS_DESC"
                        size="10"
                 />
 
+                <field name="secondwords"
+                       type="text"
+                       default=""
+                       label="MOD_WL_TYPED_MODULE_SECONDWORDS_LABEL"
+                       description="MOD_WL_TYPED_MODULE_SECONDWORDS_DESC"
+                       size="10"
+                />
+
+                <field name="thirdwords"
+                       type="text"
+                       default=""
+                       label="MOD_WL_TYPED_MODULE_THIRDWORDS_LABEL"
+                       description="MOD_WL_TYPED_MODULE_THIRDWORDS_DESC"
+                       size="10"
+                />
 
 
                 <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
