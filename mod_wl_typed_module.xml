@@ -24,8 +24,8 @@
                         name="Elementtype"
                         type="list"
                         default="'1000"
-                        label="Elementtyp"
-                        description="Bitte wählen Sie den Typ des Inhaltselement aus.">
+                        label="MOD_WL_TYPED_MODULE_ELEMENTTYPE_LABEL"
+                        description="MOD_WL_TYPED_MODULE_ELEMENTTYP_DESC">
                     <option value="1000">Animierter Text</option>
                     <option value="2000">normaler Text</option>
                 </field>
@@ -33,8 +33,8 @@
                 <field name="id"
                        type="text"
                        default="ID wählen"
-                       label="Eindeutige ID"
-                       description="Bitte wählen Sie eine ID aus."
+                       label="MOD_WL_TYPED_MODULE_ID_LABEL"
+                       description="MOD_WL_TYPED_MODULE_ID_DESC"
                        size="10"
                 />
 
@@ -42,21 +42,25 @@
                         name="fontsize"
                         type="integer"
                         default="20"
-                        label="Schriftgröße wählen"
-                        description="Bitte wählen Sie eine Schriftgröße aus."
+                        label="MOD_WL_TYPED_MODULE_FONTSIZE_LABEL"
+                        description="MOD_WL_TYPED_MODULE_FONTSIZE_DESC"
                         first="20"
                         last="60"
                         step="10"
                 />
 
 
+                <field type="spacer" name="spacer_gdpr_end" label="MOD_WL_TYPED_MODULE_MSGWORDS" />
+
                 <field name="words"
                        type="text"
-                       default="Some text"
-                       label="Schlagwörter festlegen"
-                       description="Bitte legen Sie ihre Schlagwörter an"
+                       default=""
+                       label="MOD_WL_TYPED_MODULE_WORDS-1_LABEL"
+                       description="MOD_WL_TYPED_MODULE_WORDS-1_DESC"
                        size="10"
                 />
+
+
 
                 <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
 
@@ -66,8 +70,8 @@
                         name="fontspeed"
                         type="integer"
                         default="1"
-                        label="Geschwindingkeit"
-                        description="Bitte legen Sie die Geschwindingkeit fest."
+                        label="MOD_WL_TYPED_MODULE_FONTSPEED_LABEL"
+                        description="MOD_WL_TYPED_MODULE_FONTSPEED_DESC."
                         first="1"
                         last="10"
                         step="1"
@@ -77,8 +81,8 @@
                         name="timestart"
                         type="integer"
                         default="1"
-                        label="Zeit bevor die Eingabe beginnt"
-                        description="Bitte legen Sie eine Zeit fest."
+                        label="MOD_WL_TYPED_MODULE_TIMESTART_LABEL"
+                        description="MOD_WL_TYPED_MODULE_TIMESTART_DESC"
                         first="1"
                         last="10"
                         step="1"
@@ -88,20 +92,8 @@
                         name="timeback"
                         type="integer"
                         default="1"
-                        label="Geschwindigkeit beim Rücklauf"
-                        description="Bitte legen Sie die Geschwindingkeit fest."
-                        first="1"
-                        last="10"
-                        step="1"
-                />
-
-
-                <field
-                        name="timeback"
-                        type="integer"
-                        default="1"
-                        label="Zeitverzögerung bor Rücklauf"
-                        description="Bitte legen Sie die Geschwindingkeit fest."
+                        label="MOD_WL_TYPED_MODULE_TIMEBACK_LABEL"
+                        description="MOD_WL_TYPED_MODULE_TIMEBACK_DESC"
                         first="1"
                         last="10"
                         step="1"
@@ -115,8 +107,8 @@
                         name="loop"
                         type="radio"
                         default="1"
-                        label="Ausgabe wiederholen"
-                        description="Aktivieren Sie die Checkbox für eine Wiederholung"
+                        label="MOD_WL_TYPED_MODULE_LOOP_LABEL"
+                        description="MOD_WL_TYPED_MODULE_LOOP_DESC"
                         class="btn-group btn-group-yesno">
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
@@ -126,8 +118,8 @@
                         name="loopcount"
                         type="integer"
                         default="2"
-                        label="Anzahl der Wiederholungen"
-                        description="Bitte legen Sie die Anzahl der Wiederholungen fest"
+                        label="MOD_WL_TYPED_MODULE_LOOPCOUNT_LABEL"
+                        description="MOD_WL_TYPED_MODULE_LOOPCOUNT_DESC"
                         first="1"
                         last="10"
                         step="1"
@@ -141,8 +133,8 @@
                         name="cursor"
                         type="radio"
                         default="1"
-                        label="Cursor ausblenden"
-                        description="Soll der Cursor ausgebelndet werden"
+                        label="MOD_WL_TYPED_MODULE_CURSOR_LABEL"
+                        description="MOD_WL_TYPED_MODULE_CURSOR_DESC"
                         class="btn-group btn-group-yesno">
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
