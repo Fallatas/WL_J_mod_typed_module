@@ -16,5 +16,9 @@ JHtml::_('jQuery.Framework');
 
 ?>
 <div class="wl_typed_module">
-    <p>Test</p>
+    <?php
+    echo "<pre>";
+    print_r($data);
+    echo "</pre>";
+    ?>
 </div>

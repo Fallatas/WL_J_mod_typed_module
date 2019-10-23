@@ -11,7 +11,8 @@ defined('_JEXEC') or die;
 
 	// Include the syndicate functions only once
     require_once __DIR__ . '/helper.php';   // Helper
-	
+    
+    $data = modWL_Typed_Module_Helper::getTypedParams ($params);
     
 	JHTML::_('script', 'mod_wl_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
 	

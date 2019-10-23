@@ -16,6 +16,22 @@ defined('_JEXEC') or die;
  * @since  Version 1.0.0.0
  */
 class ModWL_Typed_Module_Helper
-{
-	
+{   
+    
+    public static function getTypedParams ($params)
+        {
+            jimport( 'joomla.application.module.helper' );
+            $module = JModuleHelper::getModule('wl_typed_module');
+
+            $module_id = $module->id;
+            $db = JFactory::getDbo();
+            $query = $db->getQuery(true);
+            $query->select('params')
+                ->from($db->quoteName('#__modules'))
+                ->where('id = ' . $db->quote($module_id));
+            $db->setQuery($query);
+            $moduleparams = (json_decode($db->loadResult()));
+            return $moduleparams;
+    }
+
 }
