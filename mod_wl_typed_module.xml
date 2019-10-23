@@ -20,7 +20,7 @@
 
              <!-- Styling -->
 
-                <field
+                 <field
                         name="Elementtype"
                         type="list"
                         default="'1000"
@@ -55,8 +55,8 @@
                 <field name="words"
                        type="text"
                        default=""
-                       label="MOD_WL_TYPED_MODULE_WORDS-1_LABEL"
-                       description="MOD_WL_TYPED_MODULE_WORDS-1_DESC"
+                       label="MOD_WL_TYPED_MODULE_WORDS_LABEL"
+                       description="MOD_WL_TYPED_MODULE_WORDS_DESC"
                        size="10"
                 />
 
