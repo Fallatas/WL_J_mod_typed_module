@@ -18,7 +18,7 @@
         <fields name="params">
             <fieldset name="basic">
 
-             <field
+            <field
                         name="Elementtype"
                         type="list"
                         default="'1000"
