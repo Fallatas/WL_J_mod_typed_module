@@ -18,8 +18,8 @@
         <fields name="params">
             <fieldset name="basic">
 
-            <field
-                        name="Elementtype"
+                <field
+                        name="elementtype"
                         type="list"
                         default="'1000"
                         label="MOD_WL_TYPED_MODULE_ELEMENTTYPE_LABEL"
@@ -47,6 +47,40 @@
                         step="10"
                 />
 
+                <field name="fontcolor"
+                       type="color"
+                       default="#eee"
+                       format="rgba"
+                       label="MOD_WL_TYPED_MODULE_FONTCOLOR_LABEL"
+                       description="MOD_WL_TYPED_MODULE_FONTCOLOR_DESC"
+                />
+
+                <field name="wordcolor"
+                       type="color"
+                       default="#eee"
+                       format="rgba"
+                       label="MOD_WL_TYPED_MODULE_WORDCOLOR_LABEL"
+                       description="MOD_WL_TYPED_MODULE_WORDCOLOR_DESC"
+                />
+
+                <field name="text"
+                       type="editor"
+                       label="MOD_WL_TYPED_MODULE_TEXT_LABEL"
+                       description="MOD_WL_TYPED_MODULE_TEXT_DESC"
+                       width="300"
+                       filter="safehtml"
+                />
+
+                <field
+                        name="textsize"
+                        type="integer"
+                        default="20"
+                        label="MOD_WL_TYPED_MODULE_TEXTSIZE_LABEL"
+                        description="MOD_WL_TYPED_MODULE_TEXTSIZE_DESC"
+                        first="20"
+                        last="60"
+                        step="10"
+                />
 
                 <field type="spacer" name="spacer_gdpr_end" label="MOD_WL_TYPED_MODULE_MSGWORDS" />
 
