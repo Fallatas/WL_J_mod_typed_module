@@ -16,7 +16,22 @@ defined('_JEXEC') or die;
     
 	JHTML::_('script', 'mod_wl_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
 	
-	
+    
+    if($data->firstwords == ""){
+        // Get a handle to the Joomla! application object
+        $application = JFactory::getApplication();
+    
+    // Add a message to the message queue
+        $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
+    }
+    
+    if($data->secondwords == ""){
+        $application = JFactory::getApplication();
+    
+    // Add a message to the message queue
+        $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
+    }
+
 	// Check for a custom CSS file
     JHtml::_('stylesheet', 'mod_wl_typed_module/user.css', array('version' => 'auto', 'relative' => true));
     
