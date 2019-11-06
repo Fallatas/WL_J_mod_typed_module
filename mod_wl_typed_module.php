@@ -18,8 +18,17 @@ $data = modWL_Typed_Module_Helper::getTypedParams ($params);
 
 $css = modWL_Typed_Module_Helper::setCssParams ($params);
 
-$js = modWL_Typed_Module_Helper::setJsParams ($params);
 
+JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
+                var typed = new Typed('#typed', {
+                strings: ['$data->firstwords', '$data->secondwords', '$data->thirdwords'],
+                typeSpeed: $data->fontspeed,
+                backDelay: 750,
+                loop: $data->loop,
+                loopCount: $data->loopcount,
+                showCursor: $data->cursor
+            });
+    });");
 
 if($data->firstwords == ""){
     // Get a handle to the Joomla! application object

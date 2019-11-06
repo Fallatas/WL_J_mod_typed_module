@@ -154,12 +154,12 @@
                 <field
                         name="loop"
                         type="radio"
-                        default="1"
+                        default="true"
                         label="MOD_WL_TYPED_MODULE_LOOP_LABEL"
                         description="MOD_WL_TYPED_MODULE_LOOP_DESC"
                         class="btn-group btn-group-yesno">
-                    <option value="1">JYES</option>
-                    <option value="0">JNO</option>
+                    <option value="true">JYES</option>
+                    <option value="false">JNO</option>
                 </field>
 
                 <field
@@ -180,12 +180,12 @@
                 <field
                         name="cursor"
                         type="radio"
-                        default="1"
+                        default="true"
                         label="MOD_WL_TYPED_MODULE_CURSOR_LABEL"
                         description="MOD_WL_TYPED_MODULE_CURSOR_DESC"
                         class="btn-group btn-group-yesno">
-                    <option value="1">JYES</option>
-                    <option value="0">JNO</option>
+                    <option value="true">JYES</option>
+                    <option value="false">JNO</option>
                 </field>
 
             </fieldset>    

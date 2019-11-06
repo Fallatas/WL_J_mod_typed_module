@@ -48,12 +48,5 @@ class ModWL_Typed_Module_Helper
     }
 
 
-    public function setJsParams($params){
-        // Add JS Parameter
-        JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
-            console.log('works.');
-        });");
-    }
 
-    
 }
