@@ -26,14 +26,14 @@ if($data->firstwords == ""){
     $application = JFactory::getApplication();
 
 // Add a message to the message queue
-    $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
+    $application->enqueueMessage(JText::_('MOD_WL_TYPED_MODULE_PLACEHOLDER'), 'Warning');
 }
 
 if($data->secondwords == ""){
     $application = JFactory::getApplication();
 
 // Add a message to the message queue
-    $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
+    $application->enqueueMessage(JText::_('MOD_WL_TYPED_MODULE_PLACEHOLDER'), 'Warning');
 }
 
 
