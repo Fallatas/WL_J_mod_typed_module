@@ -9,28 +9,33 @@
 
 defined('_JEXEC') or die;
 
-	// Include the syndicate functions only once
-    require_once __DIR__ . '/helper.php';   // Helper
-    
-    $data = modWL_Typed_Module_Helper::getTypedParams ($params);
-    
-	JHTML::_('script', 'mod_wl_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
-	
-    
-    if($data->firstwords == ""){
-        // Get a handle to the Joomla! application object
-        $application = JFactory::getApplication();
-    
-    // Add a message to the message queue
-        $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
-    }
-    
-    if($data->secondwords == ""){
-        $application = JFactory::getApplication();
-    
-    // Add a message to the message queue
-        $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
-    }
+// Include the syndicate functions only once
+require_once __DIR__ . '/helper.php';   // Helper
+
+JHTML::_('script', 'mod_wl_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
+
+$data = modWL_Typed_Module_Helper::getTypedParams ($params);
+
+$css = modWL_Typed_Module_Helper::setCssParams ($params);
+
+$js = modWL_Typed_Module_Helper::setJsParams ($params);
+
+
+if($data->firstwords == ""){
+    // Get a handle to the Joomla! application object
+    $application = JFactory::getApplication();
+
+// Add a message to the message queue
+    $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
+}
+
+if($data->secondwords == ""){
+    $application = JFactory::getApplication();
+
+// Add a message to the message queue
+    $application->enqueueMessage(JText::_('Bitte wählen Sie mindestens zwei Schlagwörter aus.'), 'Warning');
+}
+
 
 	// Check for a custom CSS file
     JHtml::_('stylesheet', 'mod_wl_typed_module/user.css', array('version' => 'auto', 'relative' => true));

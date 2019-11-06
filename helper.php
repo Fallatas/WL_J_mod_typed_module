@@ -11,18 +11,17 @@
 defined('_JEXEC') or die;
 
 /**
- * Helper for mod_dd_gmaps_module
+ * Helper for mod_wl_typed_module
  *
  * @since  Version 1.0.0.0
  */
 class ModWL_Typed_Module_Helper
 {   
     
-    public static function getTypedParams ($params)
+    public function getTypedParams ($params)
         {
             jimport( 'joomla.application.module.helper' );
             $module = JModuleHelper::getModule('wl_typed_module');
-
             $module_id = $module->id;
             $db = JFactory::getDbo();
             $query = $db->getQuery(true);
@@ -34,4 +33,27 @@ class ModWL_Typed_Module_Helper
             return $moduleparams;
     }
 
+
+    public function setCssParams($params)
+    {
+        // Add CSS Parameter
+        $document = JFactory::getDocument();
+        $document->addStyleSheet(JURI::base() . 'media/mod_wl_typed_module/css/style.css');
+
+        $style = '';
+
+        $style .= '.wl_typed_module { background: '.$params->get('wordcolor').';}';
+
+        $document->addStyleDeclaration( $style );
+    }
+
+
+    public function setJsParams($params){
+        // Add JS Parameter
+        JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
+            console.log('works.');
+        });");
+    }
+
+    
 }
