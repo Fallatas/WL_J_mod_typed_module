@@ -85,30 +85,15 @@
 
                 <field type="spacer" name="spacer_gdpr_end" label="MOD_WL_TYPED_MODULE_MSGWORDS" />
 
-                <field name="firstwords"
-                       type="text"
-                       default=""
-                       label="MOD_WL_TYPED_MODULE_FIRSTWORDS_LABEL"
-                       description="MOD_WL_TYPED_MODULE_FIRSTWORDS_DESC"
-                       size="10"
-                />
 
-                <field name="secondwords"
-                       type="text"
-                       default=""
-                       label="MOD_WL_TYPED_MODULE_SECONDWORDS_LABEL"
-                       description="MOD_WL_TYPED_MODULE_SECONDWORDS_DESC"
-                       size="10"
-                />
 
-                <field name="thirdwords"
+                <field name="words"
                        type="text"
-                       default=""
-                       label="MOD_WL_TYPED_MODULE_THIRDWORDS_LABEL"
-                       description="MOD_WL_TYPED_MODULE_THIRDWORDS_DESC"
-                       size="10"
+                       default="'Videomaker','Desinger','Coder'"
+                       label="MOD_WL_TYPED_MODULE_WORDS_LABEL"
+                       description="MOD_WL_TYPED_MODULE_WORDS_DESC"
+                       filter="string"
                 />
-
 
                 <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
 
@@ -117,12 +102,12 @@
                 <field
                         name="fontspeed"
                         type="integer"
-                        default="1"
+                        default="50"
                         label="MOD_WL_TYPED_MODULE_FONTSPEED_LABEL"
                         description="MOD_WL_TYPED_MODULE_FONTSPEED_DESC."
-                        first="1"
-                        last="10"
-                        step="1"
+                        first="10"
+                        last="100"
+                        step="10"
                 />
 
                 <field

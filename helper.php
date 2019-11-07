@@ -48,5 +48,4 @@ class ModWL_Typed_Module_Helper
     }
 
 
-
 }

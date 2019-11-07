@@ -18,10 +18,9 @@ $data = modWL_Typed_Module_Helper::getTypedParams ($params);
 
 $css = modWL_Typed_Module_Helper::setCssParams ($params);
 
-
 JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
                 var typed = new Typed('#typed', {
-                strings: ['$data->firstwords', '$data->secondwords', '$data->thirdwords'],
+                strings: [$data->words],
                 typeSpeed: $data->fontspeed,
                 backDelay: 750,
                 loop: $data->loop,
@@ -30,7 +29,7 @@ JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function (
             });
     });");
 
-if($data->firstwords == ""){
+if($data->words == ""){
     // Get a handle to the Joomla! application object
     $application = JFactory::getApplication();
 
@@ -38,12 +37,6 @@ if($data->firstwords == ""){
     $application->enqueueMessage(JText::_('MOD_WL_TYPED_MODULE_PLACEHOLDER'), 'Warning');
 }
 
-if($data->secondwords == ""){
-    $application = JFactory::getApplication();
-
-// Add a message to the message queue
-    $application->enqueueMessage(JText::_('MOD_WL_TYPED_MODULE_PLACEHOLDER'), 'Warning');
-}
 
 
 	// Check for a custom CSS file
