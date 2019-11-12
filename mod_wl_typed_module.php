@@ -18,26 +18,16 @@ $data = modWL_Typed_Module_Helper::getTypedParams ($params);
 
 $css = modWL_Typed_Module_Helper::setCssParams ($params);
 
-JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
-                var typed = new Typed('#typed', {
-                strings: [$data->words],
-                typeSpeed: $data->fontspeed,
-                backDelay: 750,
-                loop: $data->loop,
-                loopCount: $data->loopcount,
-                showCursor: $data->cursor
-            });
-    });");
+$js = modWL_Typed_Module_Helper::SetJsParams ($data);
 
 if($data->words == ""){
+
     // Get a handle to the Joomla! application object
     $application = JFactory::getApplication();
 
-// Add a message to the message queue
+    // Add a message to the message queue
     $application->enqueueMessage(JText::_('MOD_WL_TYPED_MODULE_PLACEHOLDER'), 'Warning');
 }
-
-
 
 	// Check for a custom CSS file
     JHtml::_('stylesheet', 'mod_wl_typed_module/user.css', array('version' => 'auto', 'relative' => true));

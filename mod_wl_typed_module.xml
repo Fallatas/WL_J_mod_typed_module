@@ -55,6 +55,14 @@
                        description="MOD_WL_TYPED_MODULE_FONTCOLOR_DESC"
                 />
 
+                <field name="backgroundcolor"
+                       type="color"
+                       default="#eee"
+                       format="rgba"
+                       label="MOD_WL_TYPED_MODULE_BACKGROUNDCOLOR_LABEL"
+                       description="MOD_WL_TYPED_BACKGROUNDCOLOR_DESC"
+                />
+
                 <field name="wordcolor"
                        type="color"
                        default="#eee"
@@ -86,13 +94,21 @@
                 <field type="spacer" name="spacer_gdpr_end" label="MOD_WL_TYPED_MODULE_MSGWORDS" />
 
 
-
                 <field name="words"
                        type="text"
                        default="'Videomaker','Desinger','Coder'"
                        label="MOD_WL_TYPED_MODULE_WORDS_LABEL"
                        description="MOD_WL_TYPED_MODULE_WORDS_DESC"
                        filter="string"
+                />
+
+                <field name="endtext"
+                       type="editor"
+                       label="MOD_WL_TYPED_MODULE_ENDTEXT_LABEL"
+                       description="MOD_WL_TYPED_MODULE_ENDTEXT_DESC"
+                       width="300"
+                       filter="safehtml"
+                       default="?"
                 />
 
                 <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
@@ -111,25 +127,36 @@
                 />
 
                 <field
-                        name="timestart"
+                        name="startdelay"
                         type="integer"
-                        default="1"
+                        default="1200"
                         label="MOD_WL_TYPED_MODULE_TIMESTART_LABEL"
                         description="MOD_WL_TYPED_MODULE_TIMESTART_DESC"
-                        first="1"
-                        last="10"
-                        step="1"
+                        first="900"
+                        last="1500"
+                        step="100"
                 />
 
                 <field
-                        name="timeback"
+                        name="backdelay"
                         type="integer"
-                        default="1"
+                        default="500"
                         label="MOD_WL_TYPED_MODULE_TIMEBACK_LABEL"
                         description="MOD_WL_TYPED_MODULE_TIMEBACK_DESC"
-                        first="1"
-                        last="10"
-                        step="1"
+                        first="300"
+                        last="1000"
+                        step="100"
+                />
+
+                <field
+                        name="backspeed"
+                        type="integer"
+                        default="20"
+                        label="MOD_WL_TYPED_MODULE_BACKSPEED_LABEL"
+                        description="MOD_WL_TYPED_MODULE_BACKSPEED_DESC"
+                        first="10"
+                        last="80"
+                        step="10"
                 />
 
                 <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
@@ -147,16 +174,6 @@
                     <option value="false">JNO</option>
                 </field>
 
-                <field
-                        name="loopcount"
-                        type="integer"
-                        default="2"
-                        label="MOD_WL_TYPED_MODULE_LOOPCOUNT_LABEL"
-                        description="MOD_WL_TYPED_MODULE_LOOPCOUNT_DESC"
-                        first="1"
-                        last="10"
-                        step="1"
-                />
 
                 <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
 

@@ -20,6 +20,7 @@ class ModWL_Typed_Module_Helper
     
     public function getTypedParams ($params)
         {
+            /// Add Module Parameter
             jimport( 'joomla.application.module.helper' );
             $module = JModuleHelper::getModule('wl_typed_module');
             $module_id = $module->id;
@@ -42,10 +43,32 @@ class ModWL_Typed_Module_Helper
 
         $style = '';
 
-        $style .= '.wl_typed_module { background: '.$params->get('wordcolor').';}';
+        $style .= '.wl_typed_module .normal p { font-size: ' . $params->get('fontsize') . 'px;}';
+        $style .= '.wl_typed_module .normal p { color: ' . $params->get('fontcolor') . ';}';
+        $style .= '.wl_typed_module .normal span { color: ' . $params->get('wordcolor') . ';}';
+        $style .= '.wl_typed_module .normal span { font-size: ' . $params->get('textsize') .  'px;}';
+        $style .= '.wl_typed_module { background: ' . $params->get('backgroundcolor') . ';}';
 
         $document->addStyleDeclaration( $style );
     }
 
+
+    public function SetJsParams($data){
+
+        // Add JS Parameter
+        JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
+                var typed = new Typed('#typed', {
+                strings: [$data->words],
+                typeSpeed: $data->fontspeed,
+                backDelay: $data->backdelay,
+                startDelay: $data->startdelay,
+                backSpeed: $data->backspeed,
+                loop: $data->loop,
+                showCursor: $data->cursor
+            });
+            
+    });");
+
+    }
 
 }
