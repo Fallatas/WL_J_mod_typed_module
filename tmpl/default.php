@@ -16,9 +16,9 @@ JHtml::_('jQuery.Framework');
 
 ?>
 <div class="wl_typed_module">
-    <?php
-    echo "<pre>";
-    print_r($data);
-    echo "</pre>";
-    ?>
+    <div class="wrap">
+        <div class="headline">
+            <div class="normal"><?php echo $data->text; ?></div>
+            <div class="normal"><span class="typed-animation" id="typed"></span><?php echo $data->endtext ?></div>
+        </div>
 </div>
