@@ -108,7 +108,7 @@
                        description="MOD_WL_TYPED_MODULE_ENDTEXT_DESC"
                        width="300"
                        filter="safehtml"
-                       default="?"
+                       default=""
                 />
 
                 <field type="spacer" name="spacer" label="&lt;hr/&gt;" />
