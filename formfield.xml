@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+
+    <field name="properties"
+           type="text"
+           default="Videomaker"
+           label="MOD_WL_TYPED_MODULE_WORDS_LABEL"
+           description="MOD_WL_TYPED_MODULE_WORDS_DESC"
+           filter="string"
+    />
+
+</form>
