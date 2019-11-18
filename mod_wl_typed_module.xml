@@ -12,6 +12,7 @@
     <files>
         <filename module="mod_wl_typed_module">mod_wl_typed_module.php</filename>
         <filename>helper.php</filename>
+        <filename>formfield.xml</filename>
         <folder>tmpl</folder>
     </files>
     <config>
@@ -93,13 +94,17 @@
 
                 <field type="spacer" name="spacer_gdpr_end" label="MOD_WL_TYPED_MODULE_MSGWORDS" />
 
-
-                <field name="words"
-                       type="text"
-                       default="'Videomaker','Desinger','Coder'"
-                       label="MOD_WL_TYPED_MODULE_WORDS_LABEL"
-                       description="MOD_WL_TYPED_MODULE_WORDS_DESC"
-                       filter="string"
+                <field
+                        name= "fields"
+                        description= "MOD_WL_TYPED_MODULE_WORDS_DESC"
+                        type= "subform"
+                        label= "MOD_WL_TYPED_MODULE_WORDS_LABEL"
+                        min= "1"
+                        max= "12"
+                        required= "true"
+                        formsource= "modules/mod_wl_typed_module/formfield.xml"
+                        multiple= "true"
+                        buttons= "add,remove"
                 />
 
                 <field name="endtext"

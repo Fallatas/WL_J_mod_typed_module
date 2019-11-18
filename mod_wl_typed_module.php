@@ -25,7 +25,7 @@ modWL_Typed_Module_Helper::setCssParams ($params);
 
 modWL_Typed_Module_Helper::SetJsParams ($data);
 
-if($data->words == ""){
+if($data->fields == ""){
 
     // Get a handle to the Joomla! application object
     $application = Factory::getApplication();
@@ -36,6 +36,6 @@ if($data->words == ""){
 
 	// Check for a custom CSS file
     HTMLHelper::_('stylesheet', 'mod_wl_typed_module/user.css', array('version' => 'auto', 'relative' => true));
-    
-    
+
+
    require ModuleHelper::getLayoutPath('mod_wl_typed_module', $params->get('layout', 'default'));

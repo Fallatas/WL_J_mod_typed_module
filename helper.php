@@ -55,10 +55,21 @@ class ModWL_Typed_Module_Helper
 
     public function SetJsParams($data){
 
+        $tagsPrams = (array) $data->fields;
+
+        $tags = [];
+
+        foreach ($tagsPrams as $tag)
+        {
+            array_push($tags, $tag->properties);
+        }
+
+        $tags = json_encode($tags);
+
         // Add JS Parameter
         JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
                 var typed = new Typed('#typed', {
-                strings: [$data->words],
+                strings: " . $tags . ",
                 typeSpeed: $data->fontspeed,
                 backDelay: $data->backdelay,
                 startDelay: $data->startdelay,
