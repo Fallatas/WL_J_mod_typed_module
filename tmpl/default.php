@@ -11,7 +11,6 @@ defined('_JEXEC') or die;
 
 JHtml::_('stylesheet', 'mod_wl_typed_module/style.css', array('version' => 'auto', 'relative' => true));
 JHtml::_('script', 'mod_wl_typed_module/typed.js', array('version' => 'auto', 'relative' => true));
-JHtml::_('script', 'mod_wl_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
 JHtml::_('jQuery.Framework');
 
 ?>
