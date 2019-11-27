@@ -21,4 +21,3 @@ JHtml::_('jQuery.Framework');
             <div class="normal"><span class="typed-animation" id="typed"></span><?php echo $params->get('endtext'); ?></div>
         </div>
 </div>
-?>
