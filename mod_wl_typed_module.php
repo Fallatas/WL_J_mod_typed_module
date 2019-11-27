@@ -19,13 +19,11 @@ require_once __DIR__ . '/helper.php';   // Helper
 
 HTMLHelper::_('script', 'mod_wl_typed_module/scripts.js', array('version' => 'auto', 'relative' => true));
 
-$data = modWL_Typed_Module_Helper::getTypedParams ($params);
-
 modWL_Typed_Module_Helper::setCssParams ($params);
 
-modWL_Typed_Module_Helper::SetJsParams ($data);
+modWL_Typed_Module_Helper::SetJsParams ($params);
 
-if($data->fields == ""){
+if($params->get('fields') == ""){
 
     // Get a handle to the Joomla! application object
     $application = Factory::getApplication();
