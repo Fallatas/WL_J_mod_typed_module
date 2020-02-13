@@ -78,7 +78,7 @@
                        description="MOD_WL_TYPED_MODULE_TEXT_DESC"
                        width="300"
                        filter="safehtml"
-                       default="Digitaler Partner gesucht für dein Projekt gesucht?"
+                       default="Digitaler Partner für dein Projekt gesucht?"
                 />
 
                 <field
