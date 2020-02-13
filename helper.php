@@ -26,10 +26,10 @@ class ModWL_Typed_Module_Helper
 
         $style = '';
 
-        $style .= '.wl_typed_module .normal p { font-size: ' . $params->get('fontsize') . 'px;}';
-        $style .= '.wl_typed_module .normal p { color: ' . $params->get('fontcolor') . ';}';
-        $style .= '.wl_typed_module .normal span { color: ' . $params->get('wordcolor') . ';}';
-        $style .= '.wl_typed_module .normal span { font-size: ' . $params->get('textsize') .  'px;}';
+        $style .= '.wl_typed_module p { font-size: ' . $params->get('fontsize') . 'px;}';
+        $style .= '.wl_typed_module p { color: ' . $params->get('fontcolor') . ';}';
+        $style .= '.wl_typed_module span { color: ' . $params->get('wordcolor') . ';}';
+        $style .= '.wl_typed_module span { font-size: ' . $params->get('textsize') .  'px;}';
         $style .= '.wl_typed_module { background: ' . $params->get('backgroundcolor') . ';}';
 
         $document->addStyleDeclaration( $style );
