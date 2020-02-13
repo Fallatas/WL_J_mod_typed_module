@@ -17,7 +17,7 @@ JHtml::_('jQuery.Framework');
 <div class="wl_typed_module">
     <div class="wrap">
         <div class="headline">
-            <div class="normal"><?php echo $params->get('text'); ?></div>
-            <div class="normal"><span class="typed-animation" id="typed"></span><?php echo $params->get('endtext'); ?></div>
+            <div><p><?php echo $params->get('text'); ?></p></div>
+            <div class="animate"><span class="typed-animation" id="typed"></span><?php echo $params->get('endtext'); ?></div>
         </div>
 </div>
